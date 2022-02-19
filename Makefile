@@ -1,14 +1,14 @@
 # $PostgreSQL: pgsql/contrib/plpgsql_check/Makefile
 
-MODULE_big = dbms_sql
-OBJS = dbms_sql.o
-DATA = dbms_sql--1.0.sql
-EXTENSION = dbms_sql
+MODULE_big = pg_dummy
+OBJS = pg_dummy.o
+DATA = pg_dummy--1.0.sql
+EXTENSION = pg_dummy
 
-REGRESS = init dbms_sql
+REGRESS = init pg_dummy
 
 ifdef NO_PGXS
-subdir = contrib/dbms_sql
+subdir = contrib/pg_dummy
 top_builddir = ../..
 include $(top_builddir)/src/Makefile.global
 include $(top_srcdir)/contrib/contrib-global.mk
