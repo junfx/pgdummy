@@ -1,4 +1,4 @@
 \set ECHO none
 set client_min_messages TO error;
-CREATE EXTENSION IF NOT EXISTS pg_dummy;
+CREATE EXTENSION IF NOT EXISTS pgdummy;
 set client_min_messages TO default;
